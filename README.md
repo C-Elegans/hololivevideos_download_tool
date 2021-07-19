@@ -27,7 +27,7 @@ This tool searches the tables of videos on hololivevideos.download for any video
 	youtube-dl -i --skip-download --get-id 'URL_HERE' > channel_ids.txt
 	```
 	
-	1. Generate a list of previously unavailable videos 
+1. Generate a list of previously unavailable videos 
 	
 	Run the following command, subtituting the filenames you chose in the previous steps for the html file and text file listed:
 	
@@ -36,4 +36,10 @@ This tool searches the tables of videos on hololivevideos.download for any video
 	```
 
 	You can also add `-u urls_output.txt` to have the tool generate a list of urls for the videos it found.
+	
+## Notes
 
+If you do decide to use an automated tool to download videos from this site, please note the following text at the top of the front page (translated with DeepL):
+
+Note: Please ensure that the number of clicks on the download link per minute is less than or equal to 15, otherwise the IP will be blocked for 1 hour.
+Therefore, please do not use multi-threaded downloaders such as Xunlei, IDM, etc. to avoid download tools from initiating multiple download requests in a short period of time, resulting in IP being blocked by mistake.
