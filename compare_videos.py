@@ -9,6 +9,7 @@ parser.add_argument('--url_output', '-u', help='File to output the url for each 
 args = parser.parse_args()
 print(args)
 df = pd.read_html(args.html_file)[0]
+df.columns = ['Title', 'Date', 'Runtime', 'Size', 'Youtube ID']
 hd_titles = df['Title']
 hd_ids = df['Youtube ID']
 
